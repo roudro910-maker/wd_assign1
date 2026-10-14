@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swinburne Guide - Survey</title>
+    <link rel="stylesheet" href="style/desktop.css" media="screen and (min-width: 769px)">
+    <link rel="stylesheet" href="style/mobile.css" media="screen and (max-width: 768px)">
+</head>
+<body>
+    <header>
+        <h1>A Guide for Future Swinburne Students</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="campus.html">Campus Place</a></li>
+                <li><a href="tips.html">Tips &amp; Schedule</a></li>
+                <li><a href="survey.html" class="active">Student Survey</a></li>
+                <li><a href="video.html">Campus Video</a></li>
+                <li><a href="animations.html">Animations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h2>Before You Step Into Your First Lab...</h2>
+                <p>Walking up to the computing lab doors for your first practical programming class can feel a bit intimidating. To help tailor future student guides, let us know what your expectations are before you open that door and start your web development journey!</p>
+                
+                <img src="images/lab_door.jpeg" alt="Student with a backpack opening a green Swinburne computer lab door to enter a practical class" class="responsive-img">
+                
+                <form id="surveyForm" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+                    <p>
+                        <label for="studentName">Your Name:</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </p>
+                    
+                    <p>
+                        <label for="studentEmail">Swinburne Email Address:</label>
+                        <input type="email" id="studentEmail" name="studentEmail" required>
+                    </p>
+                    
+                    <p>
+                        <label for="commuteMethod">How do you travel to campus?</label>
+                        <input type="text" id="commuteMethod" name="commuteMethod" placeholder="e.g., Train to Glenferrie, Driving, Walking">
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Submit Feedback" class="btn-transition">
+                    </p>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 COS10005 Web Development Student Assignment. All original content.</p>
+    </footer>
+</body>
+</html>

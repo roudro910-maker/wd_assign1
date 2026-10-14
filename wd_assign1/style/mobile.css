@@ -1,0 +1,119 @@
+/* ========================================== */
+/* Mobile Responsive Fluid Styling            */
+/* ========================================== */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    background-color: #f4f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #d11919;
+}
+
+/* Collapse navigation items into vertical stacked bars for easy tapping */
+nav ul li {
+    display: block;
+    border-bottom: 1px solid #333333;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #d11919;
+}
+
+/* Force liquid blocks down into a clean one-column stack flow */
+main {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+}
+
+article, aside {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+aside {
+    border-left: none;
+    border-top: 4px solid #d11919;
+}
+
+/* Mobile responsive constraints for standard standalone images */
+.responsive-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+/* Unstack side-by-side structures for phone screen views */
+.campus-layout-row {
+    display: block;
+}
+
+.campus-image-col {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.campus-image-col .responsive-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Allow horizontal finger swiping for dense schedule data sheets */
+#schedule-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#surveyForm input[type="text"], #surveyForm input[type="email"] {
+    width: 100%;
+    padding: 12px;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.btn-transition {
+    width: 100%;
+    padding: 15px;
+}
+
+footer {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}

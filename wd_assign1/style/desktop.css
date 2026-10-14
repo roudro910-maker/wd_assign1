@@ -1,0 +1,213 @@
+/* ========================================== */
+/* Web Typography & Core Global Styles        */
+/* ========================================== */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #d11919; /* Swinburne thematic red variant */
+}
+
+/* Grouping Selector Demo */
+h4, h5, h6 {
+    color: #111111;
+}
+
+/* ========================================== */
+/* Menu / Navigation Styling                  */
+/* ========================================== */
+header {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    background-color: #222222;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+}
+
+/* Pseudo-class selector demo */
+nav ul li a:hover, nav ul li a.active {
+    background-color: #d11919;
+}
+
+/* ========================================== */
+/* Liquid Page Layout & Box Model             */
+/* ========================================== */
+main {
+    display: flex;
+    max-width: 1200px;
+    width: 90%; /* Liquid scaling */
+    margin: 20px auto;
+    gap: 20px;
+}
+
+article {
+    flex: 3;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #dddddd;
+}
+
+aside {
+    flex: 1;
+    background-color: #e2e8f0;
+    padding: 20px;
+    border-left: 4px solid #d11919;
+}
+
+/* Contextual selector demo */
+article section p {
+    margin-bottom: 15px;
+}
+
+/* Class selector demo & Standard Constraints */
+.responsive-img {
+    max-width: 100%;
+    max-height: 400px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+/* ========================================== */
+/* Side-by-Side Proportional Campus Layout    */
+/* ========================================== */
+.campus-layout-row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.campus-text-col {
+    flex: 1.5;
+}
+
+.campus-image-col {
+    flex: 1;
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+}
+
+.campus-image-col .responsive-img {
+    max-width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 10px 0 0 0;
+}
+
+/* ========================================== */
+/* Table, Video, & Form Component Styling     */
+/* ========================================== */
+#schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#schedule-table th, #schedule-table td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+#schedule-table th {
+    background-color: #d11919;
+    color: #ffffff;
+}
+
+#surveyForm p {
+    margin-bottom: 15px;
+}
+
+/* Id selector demo */
+#studentName {
+    background-color: #ffffff;
+}
+
+#surveyForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#surveyForm input[type="text"], #surveyForm input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+
+.video-container {
+    max-width: 640px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================================== */
+/* CSS Animation & Transition Implementation  */
+/* ========================================== */
+/* Effect 1: Button color smooth shift transition */
+.btn-transition {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.btn-transition:hover {
+    background-color: #d11919;
+}
+
+/* Effect 2: Pulsing fade-in appearance keyframe animation */
+.animated-element {
+    animation: fadeInPulse 3s infinite alternate;
+}
+
+@keyframes fadeInPulse {
+    0% { opacity: 0.7; transform: scale(0.99); }
+    100% { opacity: 1.0; transform: scale(1.0); }
+}
+
+footer {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
